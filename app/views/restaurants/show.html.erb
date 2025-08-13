@@ -19,7 +19,7 @@
       <p class="fw-lighter opacity-75 mt-2"><%= Faker::Restaurant.description  %></p>
       <h3>
         Reviews
-        <%= link_to '+', new_restaurant_review_path(@restaurant)  %>
+        <%= render "restaurants/review_form" %>
       </h3>
       <ul>
         <% if @restaurant.reviews.any? %>

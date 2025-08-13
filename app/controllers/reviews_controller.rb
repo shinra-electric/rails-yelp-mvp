@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
       redirect_to restaurant_path(@restaurant)
     else 
       raise
-      render 'new', status: :unprocessable_entity
+      render 'new', status: :unprocessable_content
     end
   end
 
